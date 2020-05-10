@@ -13,6 +13,7 @@ class Car extends GameObject {
         this.posx = this.rand(this.w)
         this.posy = this.h - 200
         this.addEventListener("click", () => this.handleClick())
+        this.addEventListener("touchstart", () => this.handleClick())
     }
   
 

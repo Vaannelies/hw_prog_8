@@ -22,6 +22,7 @@ class Bomb extends GameObject {
         this.style.transform = `translate(${this.posx}px, ${this.posy}px)`;
         this.draw();
         this.addEventListener("click", () => this.handleClick());
+        this.addEventListener("touchstart", () => this.handleClick());
     }
     draw() {
         if (this.posy > this.h) {
@@ -50,6 +51,7 @@ class Car extends GameObject {
         this.posx = this.rand(this.w);
         this.posy = this.h - 200;
         this.addEventListener("click", () => this.handleClick());
+        this.addEventListener("touchstart", () => this.handleClick());
     }
     update() {
         this.style.transform = `translate(${this.posx}px, ${this.posy}px)`;

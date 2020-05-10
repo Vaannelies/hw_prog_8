@@ -18,6 +18,7 @@ class Bomb extends GameObject {
         this.draw()
         // this.addEventListener("click", this.handleClick(this.game)).bind(this)
         this.addEventListener("click", () => this.handleClick())
+        this.addEventListener("touchstart", () => this.handleClick())
         // this.onclick(()=>{this.game.scorePoint})
     }  
 
